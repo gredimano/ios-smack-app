@@ -19,6 +19,7 @@
 		9DF567CB2048180F00203BE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567CA2048180F00203BE8 /* Constants.swift */; };
 		9DF567CD2048D39F00203BE8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567CC2048D39F00203BE8 /* LoginVC.swift */; };
 		9DF567CF2048D5E000203BE8 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567CE2048D5E000203BE8 /* CreateAccountVC.swift */; };
+		9DF567D2204C121900203BE8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567D1204C121900203BE8 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9DF567CA2048180F00203BE8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9DF567CC2048D39F00203BE8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9DF567CE2048D5E000203BE8 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		9DF567D1204C121900203BE8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		ABA93BC8459558191B88C578 /* Pods-smack-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack-app/Pods-smack-app.release.xcconfig"; sourceTree = "<group>"; };
 		CC82CC3D7961D154ADFE9614 /* Pods-smack-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack-app/Pods-smack-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		9DF567A82047958800203BE8 /* smack-app */ = {
 			isa = PBXGroup;
 			children = (
+				9DF567D0204C120800203BE8 /* Services */,
 				9DF567C9204817F900203BE8 /* Utilities */,
 				9DF567C22047DB1400203BE8 /* Models */,
 				9DF567C12047DB0F00203BE8 /* Controllers */,
@@ -131,6 +134,14 @@
 				9DF567CA2048180F00203BE8 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9DF567D0204C120800203BE8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9DF567D1204C121900203BE8 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A8A46BE80AC596D20C91CC7F /* Frameworks */ = {
@@ -289,6 +300,7 @@
 				9DF567C62047DB4B00203BE8 /* ChannelVC.swift in Sources */,
 				9DF567C42047DB3B00203BE8 /* ChatVC.swift in Sources */,
 				9DF567CF2048D5E000203BE8 /* CreateAccountVC.swift in Sources */,
+				9DF567D2204C121900203BE8 /* AuthService.swift in Sources */,
 				9DF567CD2048D39F00203BE8 /* LoginVC.swift in Sources */,
 				9DF567C820480D4000203BE8 /* GradientView.swift in Sources */,
 				9DF567AA2047958800203BE8 /* AppDelegate.swift in Sources */,
