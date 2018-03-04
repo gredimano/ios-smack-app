@@ -220,7 +220,7 @@
                                     <action selector="CreateAccountBtnPressed:" destination="XBJ-MV-MPz" eventType="touchUpInside" id="ogK-tw-lqo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcE-hr-bWN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcE-hr-bWN" customClass="RoundedButton" customModule="smack_app" customModuleProvider="target">
                                 <rect key="frame" x="62" y="286" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -345,9 +345,10 @@
                                 </state>
                                 <connections>
                                     <action selector="CreateAccountBtnPressed:" destination="XBJ-MV-MPz" eventType="touchUpInside" id="nJ8-q7-Xov"/>
+                                    <action selector="pickAvatarPressed:" destination="Csi-Nq-0sy" eventType="touchUpInside" id="Tyo-18-3CH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ske-GE-iQ9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ske-GE-iQ9" customClass="RoundedButton" customModule="smack_app" customModuleProvider="target">
                                 <rect key="frame" x="63" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -358,6 +359,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="Csi-Nq-0sy" eventType="touchUpInside" id="9x0-BZ-rab"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="gag-m0-BbI">
                                 <rect key="frame" x="138" y="299" width="100" height="100"/>
@@ -378,6 +382,7 @@
                                 </state>
                                 <connections>
                                     <action selector="CreateAccountBtnPressed:" destination="XBJ-MV-MPz" eventType="touchUpInside" id="LTD-8h-ySH"/>
+                                    <action selector="pickBackgroundColorPressed:" destination="Csi-Nq-0sy" eventType="touchUpInside" id="SdS-FC-rwW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -402,6 +407,10 @@
                         <viewLayoutGuide key="safeArea" id="wtb-0T-z1u"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="fOc-jg-xhc" id="s5N-uR-SJR"/>
+                        <outlet property="passTxt" destination="Nwr-vq-e2h" id="Yqi-XL-E8b"/>
+                        <outlet property="userImg" destination="gag-m0-BbI" id="Kip-Nl-9u1"/>
+                        <outlet property="usernameTxt" destination="4FL-9D-7nR" id="S6h-NV-JqR"/>
                         <segue destination="8YR-3y-2SC" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="Gbp-0q-EXN"/>
                     </connections>
                 </viewController>
