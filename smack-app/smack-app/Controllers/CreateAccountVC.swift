@@ -51,6 +51,7 @@ class CreateAccountVC: UIViewController {
                                     self.spinner.isHidden = true
                                     self.spinner.stopAnimating()
                                     self.performSegue(withIdentifier: UNWIND, sender: nil)
+                                    NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                                 }
                             })
                     }
@@ -89,6 +90,8 @@ class CreateAccountVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(CreateAccountVC.handleTap))
         view.addGestureRecognizer(tap)
     }
+
+
 
     @objc func handleTap() {
         view.endEditing(true)
