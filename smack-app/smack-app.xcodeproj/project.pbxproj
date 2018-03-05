@@ -21,6 +21,7 @@
 		9DF567CF2048D5E000203BE8 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567CE2048D5E000203BE8 /* CreateAccountVC.swift */; };
 		9DF567D2204C121900203BE8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567D1204C121900203BE8 /* AuthService.swift */; };
 		9DF567D4204C2B2E00203BE8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567D3204C2B2E00203BE8 /* RoundedButton.swift */; };
+		9DF567D6204CDDAC00203BE8 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567D5204CDDAC00203BE8 /* UserDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		9DF567CE2048D5E000203BE8 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		9DF567D1204C121900203BE8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		9DF567D3204C2B2E00203BE8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		9DF567D5204CDDAC00203BE8 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		ABA93BC8459558191B88C578 /* Pods-smack-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack-app/Pods-smack-app.release.xcconfig"; sourceTree = "<group>"; };
 		CC82CC3D7961D154ADFE9614 /* Pods-smack-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack-app/Pods-smack-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9DF567D1204C121900203BE8 /* AuthService.swift */,
+				9DF567D5204CDDAC00203BE8 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				9DF567C62047DB4B00203BE8 /* ChannelVC.swift in Sources */,
 				9DF567D4204C2B2E00203BE8 /* RoundedButton.swift in Sources */,
 				9DF567C42047DB3B00203BE8 /* ChatVC.swift in Sources */,
+				9DF567D6204CDDAC00203BE8 /* UserDataService.swift in Sources */,
 				9DF567CF2048D5E000203BE8 /* CreateAccountVC.swift in Sources */,
 				9DF567D2204C121900203BE8 /* AuthService.swift in Sources */,
 				9DF567CD2048D39F00203BE8 /* LoginVC.swift in Sources */,

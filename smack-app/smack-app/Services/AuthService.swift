@@ -50,7 +50,7 @@ class AuthService {
             encoding: JSONEncoding.default,
             headers: HEADER
         ).responseString { (response) in
-            if(response.result.error == nil) {
+            if response.result.error == nil {
                 completion(true)
             } else {
                 completion(false)
@@ -75,13 +75,56 @@ class AuthService {
             headers: HEADER
         ).responseJSON { (response) in
 
-            if(response.result.error == nil) {
+            if response.result.error == nil {
                 guard let data = response.data else { return }
                 let json = try! JSON(data: data)
                 self.userEmail = json["user"].stringValue
                 self.authToken = json["token"].stringValue
 
                 self.isLoggedIn = true
+                completion(true)
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+        }
+    }
+
+    func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping completionHandler) {
+        let lowerCaseEmail = email.lowercased()
+
+        let body: [String: Any] = [
+            "name": name,
+            "email": lowerCaseEmail,
+            "avatarName": avatarName,
+            "avatarColor": avatarColor,
+        ]
+
+        let header = [
+            "Authorization": "Bearer \(AuthService.instance.authToken)",
+            "Content-Type": "application/json; charset=utf-8"
+        ]
+
+        Alamofire.request(
+            URL_USER_ADD,
+            method: .post,
+            parameters: body,
+            encoding: JSONEncoding.default,
+            headers: header
+        ).responseJSON { (response) in
+
+            if response.result.error == nil {
+                guard let data = response.data else { return }
+                let json = try! JSON(data: data)
+
+                UserDataService.instance.setUser(
+                    id: json["_id"].stringValue,
+                    color: json["avatarColor"].stringValue,
+                    avatarName: json["avatarName"].stringValue,
+                    email: json["email"].stringValue,
+                    name: json["name"].stringValue
+                )
+
                 completion(true)
             } else {
                 completion(false)
