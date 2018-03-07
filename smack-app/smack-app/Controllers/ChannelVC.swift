@@ -18,6 +18,14 @@ class ChannelVC: UIViewController {
         )
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        setUpUserInfo()
+    }
+
+    @objc func userDataDidChange(_ notif: Notification) {
+        setUpUserInfo()
+    }
+
     @IBAction func loginBtnPressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn {
             let profile = ProfileVC()
@@ -28,7 +36,7 @@ class ChannelVC: UIViewController {
         }
     }
 
-    @objc func userDataDidChange(_ notif: Notification) {
+    func setUpUserInfo() {
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             profileImage.image = UIImage(named: UserDataService.instance.avatarName)
