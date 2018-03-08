@@ -10,6 +10,7 @@
 		7D0E15FAE12874A4B3FC3591 /* Pods_smack_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C151D44E80B255DF9614A7F /* Pods_smack_app.framework */; };
 		9D0D0DD2204FD1C700657369 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D0DD1204FD1C700657369 /* MessageService.swift */; };
 		9D0D0DD4204FD26600657369 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D0DD3204FD26600657369 /* Channel.swift */; };
+		9D0D0DD62050D70F00657369 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D0DD52050D70F00657369 /* ChannelCell.swift */; };
 		9DF4B985204F8B7D0070BDF1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4B983204F8B7D0070BDF1 /* ProfileVC.swift */; };
 		9DF4B986204F8B7D0070BDF1 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF4B984204F8B7D0070BDF1 /* ProfileVC.xib */; };
 		9DF567AA2047958800203BE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567A92047958800203BE8 /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 		9C151D44E80B255DF9614A7F /* Pods_smack_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0D0DD1204FD1C700657369 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		9D0D0DD3204FD26600657369 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		9D0D0DD52050D70F00657369 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		9DF4B983204F8B7D0070BDF1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9DF4B984204F8B7D0070BDF1 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		9DF567A62047958800203BE8 /* smack-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smack-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 				9DF567D3204C2B2E00203BE8 /* RoundedButton.swift */,
 				9DF567D9204CE80500203BE8 /* AvatarCell.swift */,
 				9DF567DB204CF09200203BE8 /* CircleImage.swift */,
+				9D0D0DD52050D70F00657369 /* ChannelCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DF4B985204F8B7D0070BDF1 /* ProfileVC.swift in Sources */,
+				9D0D0DD62050D70F00657369 /* ChannelCell.swift in Sources */,
 				9DF567C62047DB4B00203BE8 /* ChannelVC.swift in Sources */,
 				9DF567D8204CE63200203BE8 /* AvatarPickerVC.swift in Sources */,
 				9DF567D4204C2B2E00203BE8 /* RoundedButton.swift in Sources */,
