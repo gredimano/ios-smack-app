@@ -38,7 +38,13 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             performSegue(withIdentifier: TO_LOGIN, sender: nil)
         }
     }
-
+    
+    @IBAction func addChannelBtnPressed(_ sender: Any) {
+        let channel = AddChannelVC()
+        channel.modalPresentationStyle = .custom
+        present(channel, animated: true, completion: nil)
+    }
+    
     func setUpUserInfo() {
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
