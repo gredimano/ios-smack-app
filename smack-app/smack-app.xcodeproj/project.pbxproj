@@ -16,6 +16,7 @@
 		9DE37770205225B700F28388 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3776F205225B700F28388 /* SocketService.swift */; };
 		9DE377722052529900F28388 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE377712052529900F28388 /* Message.swift */; };
 		9DE3777420525B3800F28388 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3777320525B3800F28388 /* KeyboardBoundView.swift */; };
+		9DE377762052690300F28388 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE377752052690300F28388 /* MessageCell.swift */; };
 		9DF4B985204F8B7D0070BDF1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4B983204F8B7D0070BDF1 /* ProfileVC.swift */; };
 		9DF4B986204F8B7D0070BDF1 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF4B984204F8B7D0070BDF1 /* ProfileVC.xib */; };
 		9DF567AA2047958800203BE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF567A92047958800203BE8 /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		9DE3776F205225B700F28388 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		9DE377712052529900F28388 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		9DE3777320525B3800F28388 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		9DE377752052690300F28388 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		9DF4B983204F8B7D0070BDF1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9DF4B984204F8B7D0070BDF1 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		9DF567A62047958800203BE8 /* smack-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smack-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 				9DF567D9204CE80500203BE8 /* AvatarCell.swift */,
 				9DF567DB204CF09200203BE8 /* CircleImage.swift */,
 				9D0D0DD52050D70F00657369 /* ChannelCell.swift */,
+				9DE377752052690300F28388 /* MessageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				9D0D0DD62050D70F00657369 /* ChannelCell.swift in Sources */,
 				9DF567C62047DB4B00203BE8 /* ChannelVC.swift in Sources */,
 				9DF567D8204CE63200203BE8 /* AvatarPickerVC.swift in Sources */,
+				9DE377762052690300F28388 /* MessageCell.swift in Sources */,
 				9DF567D4204C2B2E00203BE8 /* RoundedButton.swift in Sources */,
 				9DE377722052529900F28388 /* Message.swift in Sources */,
 				9D0D0DD4204FD26600657369 /* Channel.swift in Sources */,
