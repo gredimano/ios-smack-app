@@ -582,12 +582,13 @@
                         <viewLayoutGuide key="safeArea" id="s6t-eJ-jAB"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="VTe-Xa-xSS" id="Tbo-su-RsU"/>
                         <outlet property="menuBtn" destination="hmA-RX-UpP" id="9aY-td-Nra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xW5-X7-bvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="509"/>
+            <point key="canvasLocation" x="1032.8" y="508.69565217391306"/>
         </scene>
     </scenes>
     <resources>
